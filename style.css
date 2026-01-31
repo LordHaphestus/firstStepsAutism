@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #333333;
+    background: white;
+}
+h1, h2 {
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+    font-weight: 500;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+    background-color: #E0F2F1;
+
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+header #logo {
+    width: 40%;
+}
+header #logo img {
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+nav a {
+    font-size: 2.2em;
+    padding: 15px;
+
+    border-radius: 10px;
+    
+    transition: background-color 0.5s ease, color 0.2s ease, border-radius 1s ease, transform 1s ease;
+}
+nav a:hover {
+    background-color: #4AB8A1;
+    color: #f0f8ff;
+
+    transform: scale(1.1);
+
+    border-radius: 30px 10px;
+}
+#home {
+    padding: 50px 25px;
+    text-align: center;
+}
+#home #hero {
+    transition: transform 0.5s ease;
+}
+#home #hero:hover {
+    transform: translateY(-5px);
+}
+
+#hero img {
+    width: 100%;
+}
+
+#aboutUs, #social {
+    margin: 50px 0;
+    /* border-radius: 0 15px 15px 15px; */
+
+    display: grid;
+    
+    transition: transform 0.5s ease;
+    background-color: #E0F2F1;
+}
+#social {
+
+    padding: 15px;
+
+    grid-template-columns: repeat(2, 1fr) repeat(2, 100px) repeat(2, 1fr);
+    grid-template-rows: 75px 400px 75px;
+}
+#social #socialImages {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px; */
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 0 15px;
+
+    height: 250px;
+}
+#social #socialImages section {
+    padding: 15px;
+    margin: 25px;
+    border-radius: 15px;
+
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    background-color: #4AB8A1;
+}
+#social #socialImages section:hover {
+    background-color: #55c2aa;
+    transform: translateY(-5px);
+}
+#social #socialImages img {
+    max-height: 250px;
+}
+#aboutUs {    
+    padding: 35px;
+    
+    grid-template-columns: repeat(2, 1fr) repeat(2, 100px) repeat(2, 1fr);
+    grid-template-rows: 1fr 75px;
+    place-items: center;
+}
+#aboutUs #whoweare {
+    text-align: justify;
+}
+#whoweare {
+    font-size: 1.9em;
+
+    padding: 15px;
+}
+.btn {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 95px;
+
+    font-weight: 600;
+
+    background-color: #4AB8A1;
+    transition: background-color 0.5s ease;
+}
+.btn:hover {
+    background-color: #59e0c3;
+}
+.mail {
+    font-size: 2em;
+    background-color: #4AB8A1;
+
+    padding: 25px;
+
+    border-radius: 90px 45px;
+    transition: background-color 0.5s ease;
+}
+.mail:hover {
+    background-color: #59e0c3;
+}
+footer {
+    background-color: #333333;
+}
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 75px;
+}
+footer img {
+    background-color: #E0F2F1;
+    padding: 20px;
+    border-radius: 15px;
+
+    width: 500px;
+}
+#footerInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#footerInfo section {
+    margin: 0 25px;
+}
+#footerInfo h2 {
+    color: #4AB8A1;
+}
+#footerInfo p {
+    color: #E0F2F1;
+}
+
+#footerLocation, #footerMail {
+    border-radius: 15px;
+    height: 150px;
+    margin: 0 10px;
+
+    transition: background-color 0.5s ease;
+}
+#footerLocation:hover, #footerMail:hover {
+    background-color: #424242;
+}
+
+#copyright {
+    color: #E0F2F1;
+    background-color: #262626;
+
+    text-align: center;
+
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* You ought to maybe make this into a grid so you can center the images with the text */
+#about {
+    padding: 25px 0;
+}
+#about div { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+#about div section {
+    width: 35%;
+    text-align: justify;
+}
+#about div img {
+    width: 35%;
+}
+
+#services * {
+    margin: 0;
+    padding: 0;
+}
+#services h1 {
+    text-align: center;
+    padding: 25px;
+}
+#services div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 75px);
+    place-items: center;
+    object-fit: cover;
+
+    margin: 100px;
+    margin-top: 0;
+}
+#services div section {
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+#services div img {
+    grid-row: 1/8;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    header #logo {
+        width: 60%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.6em;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+
+    #aboutUs section,
+    #aboutUs a {
+        grid-column: auto !important;
+    }
+
+    #social {
+        grid-template-rows: auto auto auto;
+    }
+
+    #social #socialImages {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    #social #socialImages section {
+        width: 40%;
+        min-width: 250px;
+    }
+
+    #social #socialImages img {
+        max-height: 150px;
+    }
+
+    footer div {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    #footerInfo {
+        width: 100%;
+    }
+
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 25px;
+    }
+
+    #aboutUs section,
+    #aboutUs a {
+        grid-column: 1 / -1 !important;
+    }
+
+    #whoweare {
+        font-size: 1.6em;
+        text-align: left;
+        padding: 20px;
+    }
+    #aboutWelcome,
+    #aboutUs {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+
+    #aboutWelcome img,
+    #aboutUs img {
+        width: 100%;
+    }
+
+    #aboutWelcome section,
+    #aboutUs section {
+        width: 100%;
+        text-align: left;
+    }
+
+
+    #services div {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 50px 20px;
+        gap: 30px;
+    }
+
+    #services div section,
+    #services div img {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+
+    #services div img {
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1.4em;
+        padding: 10px;
+    }
+
+    #home {
+        padding: 25px 15px;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #aboutUs #whoweare {
+        text-align: left;
+    }
+
+    #whoweare {
+        font-size: 1.3em;
+        padding: 15px;
+    }
+
+    #social {
+        grid-template-rows: auto auto auto;
+    }
+
+    #social #socialImages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #social #socialImages section {
+        width: 90%;
+    }
+
+    #social #socialImages img {
+        max-height: 120px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .mail {
+        font-size: 1.4em;
+        padding: 15px;
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    footer div {
+        padding: 30px 20px;
+    }
+
+
+    #about {
+        padding: 15px;
+    }
+
+    #aboutWelcome section,
+    #aboutUs section {
+        font-size: 0.95em;
+    }
+
+
+    #services h1 {
+        padding: 25px 10px;
+    }
+
+    #services div {
+        margin: 30px 10px;
+    }
+
+    #services div section {
+        font-size: 0.95em;
+    }
+}
